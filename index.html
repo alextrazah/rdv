@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rdv santé</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo-and-title">
+        <img src="logo.svg" alt="Logo" class="logo" />
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="#"><img src="home.svg" />Acceuil</a>
+          </li>
+          <li>
+            <a href="#"><img src="pha.svg" /> Pharmacies</a>
+          </li>
+          <li>
+            <a href="#"><img src="med.svg" /> Médicaments</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="buttons">
+        <button class="login-btn">Professionnels</button>
+        <button class="login-btn">Se Conneter</button>
+      </div>
+    </header>
+
+    <main>
+      <div class="hero-container">
+        <div class="hero-text">
+          <p class="sub-title">Votre pharmacie à portée de main:</p>
+          <p class="sub-title">précommandez sans bouger !</p>
+          <p class="paragraph">
+            Vous mettons directement en relation avec votre pharmacie et vous
+            permettons de précommander sans avoir à vous déplacer.
+          </p>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="search-bar">
+          <div>
+            <input
+              type="text"
+              id="search-input"
+              class="search-input"
+              placeholder="Cherchez votre médicament..."
+              oninput="filterSuggestions()"
+            />
+            <ul id="suggestions-list" class="suggestions-list"></ul>
+          </div>
+          <button class="add-btn" onclick="addMedication()">Ajouter</button>
+        </div>
+      </div>
+
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
